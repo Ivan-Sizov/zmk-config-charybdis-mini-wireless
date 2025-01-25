@@ -49,6 +49,16 @@
             bindings = <&bootloader>;
             key-positions = <35 39>;
         };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <7 8>;
+        };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <2 3>;
+        };
     };
 
     behaviors {
