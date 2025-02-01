@@ -6,6 +6,8 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define U_TAPPING_TERM 200
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
 / {
     chosen { zmk,matrix_transform = &default_transform; };
