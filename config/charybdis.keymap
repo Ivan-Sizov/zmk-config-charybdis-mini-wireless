@@ -3,6 +3,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define U_TAPPING_TERM 200
 
@@ -175,6 +176,20 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        mouse_snipe {
+            if-layers = <5>;
+            then-layer = <3>;
+        };
+
+        slow_scroll {
+            if-layers = <4>;
+            then-layer = <5>;
         };
     };
 };
