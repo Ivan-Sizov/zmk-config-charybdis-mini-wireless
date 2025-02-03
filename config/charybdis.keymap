@@ -3,6 +3,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define U_TAPPING_TERM 200
 
@@ -60,13 +61,13 @@
         };
 
         scroll {
-            bindings = <&mo 4>;
-            key-positions = <21 20>;
+            bindings = <&tog 4>;
+            key-positions = <21 22>;
         };
 
         snipe {
-            bindings = <&mo 5>;
-            key-positions = <20 19>;
+            bindings = <&tog 5>;
+            key-positions = <33 34>;
         };
     };
 
