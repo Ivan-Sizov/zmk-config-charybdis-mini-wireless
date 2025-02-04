@@ -3,6 +3,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #include <dt-bindings/zmk/keys.h>j
 
@@ -21,8 +22,8 @@
             key-positions = <32 33>;
         };
 
-        MouseLayer {
-            bindings = <&tog 3>;
+        LeftClck {
+            bindings = <&mkp LCLK>;
             key-positions = <32 31>;
         };
 
@@ -62,13 +63,8 @@
         };
 
         MiddleClick {
-            bindings = <&mkp MCLK>;
-            key-positions = <22 21>;
-        };
-
-        SnipeLayer {
-            bindings = <&tog 5>;
-            key-positions = <34 33>;
+            bindings = <&mkp LCLK>;
+            key-positions = <21 22>;
         };
     };
 
